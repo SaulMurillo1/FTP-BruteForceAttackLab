@@ -66,6 +66,8 @@ Utilize the hydra tool to perform a brute-force password attack on the target FT
 <br/>
 - Hydra is an open source, password brute-forcing tool designed around flexibility and high performance in online brute-force attacks.
 <br/>
+- In the hydra command below, two wordlists were used to help brute-force the passwords which were found. The first wordlist (-L) "common_users.txt" is a wordlist of common usernames, while the second wordlist (-P) "unix_passwords.txt" is a wordlist of common passwords. 
+<br/>
 - We can see that the hydra tool found 7 valid passwords with the username included as well.
 <br/>
 <br/>
