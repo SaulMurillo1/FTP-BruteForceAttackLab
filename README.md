@@ -98,6 +98,36 @@ Command: ftp 192.189.216.3
 <br />
 <br />
 <br />
+Now use one of the usernames and passwords that we found in the prior step when conducting a brute-force password attack using Hydra: <br/>
+<br/>
+- This time, I logged in with the sysadmin:654321 username/password which was found in a prior step. We can see that I was allowed access to the FTP server and was able to find a text file name "secret.txt". I was also able to view the information in the secret.txt file.
+<br/>
+<br/>
+Command: ftp 192.189.216.3
+<br/>
+sysadmin
+<br/>
+654321
+<br/>
+ls
+<br/>
+get secret.txt
+<br/>
+exit
+<br/>
+ls
+<br/>
+cat secret.txt
+<br/>
+<br/>
+<img src="https://i.imgur.com/VZI2I36.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
 
