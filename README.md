@@ -2,7 +2,7 @@
 
 
 <h2>Description</h2>
-This project consists of using the Hydra and Nmap Linux tools to perform dictionary/brute-force password attacks in order to obtain access to the target FTP server. 
+This project consists of using the Hydra and Nmap Linux tools to perform dictionary/brute-force password attacks in order to obtain access to the target FTP (Port 21) server. 
 <br />
 <br />
 <br />
