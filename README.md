@@ -46,6 +46,22 @@ nmap 192.189.216.3
 <br />
 <br />
 <br />
+Run nmap scan that will enumerate the FTP version and OS of the target machine: <br/>
+<br/>
+- It looks like the version for port 21 is ProFTPD 1.3.5a. We can also see that the nmap scan did an aggressive OS scan and it guessed Linux 2.6.32 with a 96% certainty. 
+<br/>
+<br/>
+Commands: nmap 192.189.261.3 -p 21 -sV -O
+<br/>
+<br/>
+<img src="https://i.imgur.com/mPPUtmq.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
 
