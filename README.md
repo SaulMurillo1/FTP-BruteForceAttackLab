@@ -51,7 +51,7 @@ Run nmap scan that will enumerate the FTP version and OS of the target machine: 
 - It looks like the version for port 21 is ProFTPD 1.3.5a. We can also see that the nmap scan did an aggressive OS scan and it guessed Linux 2.6.32 with a 96% certainty. 
 <br/>
 <br/>
-Commands: nmap 192.189.261.3 -p 21 -sV -O
+Command: nmap 192.189.261.3 -p 21 -sV -O
 <br/>
 <br/>
 <img src="https://i.imgur.com/mPPUtmq.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
@@ -71,10 +71,26 @@ Utilize the hydra tool to perform a brute-force password attack on the target FT
 - We can see that the hydra tool found 7 valid passwords with the username included as well.
 <br/>
 <br/>
-Commands: hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt 192.189.216.3 ftp
+Command: hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt 192.189.216.3 ftp
 <br/>
 <br/>
 <img src="https://i.imgur.com/Ht9U4F3.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+Check if FTP server allows users to log in anonymously: <br/>
+<br/>
+- A user can try to log into the FTP server anonymously by using the command below and not entering anything for both the username and password. We can see below that the "Login failed", which means this FTP server does not allow users to log in anonymously.
+<br/>
+<br/>
+Command: ftp 192.189.216.3
+<br/>
+<br/>
+<img src="https://i.imgur.com/4pEF68n.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
 <br />
 <br />
 <br />
