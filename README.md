@@ -128,6 +128,22 @@ cat secret.txt
 <br />
 <br />
 <br />
+Use Nmap tool as another way to perform a brute-force password attack on the target FTP server: <br/>
+<br/>
+- We can see below that nmap can also be used to perform a brute-force attack by using a script called ftp-brute. 
+<br/>
+<br/>
+Command: nmap 192.189.216.3 -p 21 --script ftp-brute --script-args userdb=/root/users
+<br/>
+<br/>
+<img src="https://i.imgur.com/s4oTXPc.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
 
